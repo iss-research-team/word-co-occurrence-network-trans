@@ -1,7 +1,7 @@
 # Word co-occurrence network transfer
 We present a transformation method for word co-occurrence networks that can achieve better word representations.
 
-## requirements
+## Requirements
 python==3.8  
 torch==1.10  
 scikit-learn==0.24.0  
