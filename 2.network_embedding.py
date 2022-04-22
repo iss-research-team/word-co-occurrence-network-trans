@@ -146,14 +146,13 @@ class MyDataSet(Data.Dataset):
         return self.s_list[idx], self.t_list[idx], self.ng_list[idx]
 
 
-def train():
+def train(if_trans):
     # 参数设置
     d = 768
     ng_num = 5
     batch_size = 128
     epochs = 50
     cuda_order = '0'
-    if_trans = 'yes'
 
     # 数据载入
     print('processing---')
@@ -208,4 +207,5 @@ def train():
 
 
 if __name__ == '__main__':
-    train()
+    if_trans = sys.argv[1]
+    train(if_trans)

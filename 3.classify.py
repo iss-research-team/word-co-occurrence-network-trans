@@ -130,7 +130,7 @@ if __name__ == '__main__':
     batch_size = 16
     epochs = 100
     # 载入数据
-    if_trans = 'no'
+    if_trans = 'yes'
     data_x, data_y = get_data(if_trans)
 
     data_x_train, data_x_test, data_y_train, data_y_test = train_test_split(data_x, data_y, train_size=0.7)
